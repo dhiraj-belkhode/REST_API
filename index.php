@@ -12,9 +12,11 @@
 |
 */
 
+
+
 require __DIR__.'/app/start.php';
 use App\Route;
 
 Route::get('testobj', 'UserController@work');
 Route::get('ask', 'UserController@worka');
-
+Route::post('testobj', 'UserController@workpost');

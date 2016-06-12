@@ -4,23 +4,22 @@ namespace App\controllers;
 class UserController{
 
 	public function __construct(){
-		echo "UserController";
-		$this->test = "Working this";
+		$this->test = array('asdada da da','asd as das das d');
 	}
 
 	public function work($request){
 
-		return json_encode($request);
+		return $this->test;
 
-		exit;
-		echo "<pre>";
-		print_r($request);
-		exit;
+	}
 
-		echo "<br>";
-		echo $this->test;
-		echo "<br>";
-		echo "in work";
-		exit;
+	public function worka($request){
+
+		return "test worka";
+
+	}
+
+	public function workpost($request){
+		return "IN WORKPOST";
 	}
 }
